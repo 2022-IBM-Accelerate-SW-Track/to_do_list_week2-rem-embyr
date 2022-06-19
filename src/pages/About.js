@@ -1,31 +1,29 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
-
+import profilepic from "../assets/profilepic.jpg";
+  
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
-        <div class="split left">
-          <div className="centered">
-            <img
-              className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
+      <div class="split left">
+        <div className="centered">
+          <img 
+            className="profile_image"
+            src = {profilepic}
+            alt="Profile Pic"
             ></img>
-          </div>
         </div>
-        <div className="split right">
-          <div className="centered">
-            <div className="name_title">Your Name</div>
-            <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
-            </div>
+      </div>
+      <div className="split right">
+        <div className="centered">
+          <div className="name_title"><h4>Embyr Williams</h4></div>
+          <div className="brief_description">
+          A rising sophomore at Columbia University, Embyr is majoring in computer science with a concentration in visual arts. She is the secretary of Columbia Wushu and has her black belt in Taekwondo.
           </div>
         </div>
       </div>
-    );
+    </div>
+    )
   }
 }
